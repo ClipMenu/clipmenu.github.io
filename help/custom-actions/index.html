@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    Design by Free CSS Templates
+    http://www.freecsstemplates.org
+    Released for free under a Creative Commons Attribution 2.5 License
+    Name       : Pluralism
+    Description: A two-column, fixed-width template fit for 1024x768 screen resolutions.
+    Version    : 1.0
+    Released   : 20071218
+  -->
+  <head>
+    <meta charset='utf-8'>
+    <title>Custom Actions using JavaScript - ClipMenu.com</title>
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/lightbox.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" type="text/javascript"></script>
+    <script src="/javascripts/main.js" type="text/javascript"></script>
+    <link href="/images/favicon.png" rel="icon" type="image/png" />
+  </head>
+  <body>
+    <div id='wrapper'>
+      <div id='wrapper2'>
+        <div id='header'>
+          <div id='logo'>
+            <h1>
+              <a href="/">ClipMenu</a>
+            </h1>
+          </div>
+          <div id='locale'>
+            <ul>
+              <li>
+                <a onclick="setLocale('en')" href="/help/custom-actions/"><img width="16" height="11" src="/images/flag/en.png" />
+                </a>
+              </li>
+              <li>
+                <a onclick="setLocale('ja')" href="/ja/help/custom-actions/"><img width="16" height="11" src="/images/flag/ja.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id='menu'>
+            <ul>
+              <li>
+                <a href="/features/">Features</a>
+                <a href="/screenshots/">Screenshots</a>
+                <a href="/versionhistory/">Version History</a>
+                <a href="/help/">Help</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id='page'>
+          <div class='clear'></div>
+          <div class='center' id='top-ad'>
+          </div>
+          <div id='content'>
+            <p>ClipMenu allows you to create your own custom actions for a clipboard history item to perform text manipulations. A custom action is a single file written in JavaScript, a popular scripting language.</p>
+            
+            <h3 id="install">Install</h3>
+            
+            <p>Place custom actions under the path:</p>
+            
+            <p>/Users/USERNAME/Library/Application Support/ClipMenu/script/action</p>
+            
+            <p>If it does not exist, create it by yourself.</p>
+            
+            <p><img alt="script folder" width="181" height="207" src="/images/help/script_folder.png" /></p>
+            
+            <p>Custom actions must be end with ".js" extension. Files without it are ignored.</p>
+            
+            <p>Folders placed in the path work as sub-menus in ClipMenu application.</p>
+            
+            <h3 id="basic">Basic</h3>
+            
+            <h4 id="predefined-variables">Predefined Variables</h4>
+            
+            <p>Following variables are already defined. You can get text strings from these variables to perform text manipulations.</p>
+            
+            <ul>
+              <li>
+                <h5 id="cliptext">clipText</h5>
+            
+                <p>A string of selected clipboard history item.</p>
+              </li>
+              <li>
+                <h5 id="clip">clip</h5>
+            
+                <p>An object of selected clipboard history item. This is only used to change string attributes of RTF/RTFD now.</p>
+              </li>
+              <li>
+                <h5 id="clipmenu">ClipMenu</h5>
+            
+                <p>An object used to load libraries.</p>
+              </li>
+            </ul>
+            
+            <h4 id="return-statement">Return statement</h4>
+            
+            <p>When a value, a string or a clip object, is returned by return statement, they are transferred to system clipboard.</p>
+            
+            <p>e.g., Returning an unmodified string</p>
+            
+            <pre><code>return clipText;
+            </code></pre>
+            
+            <p>e.g., Returning an unmodified clip object</p>
+            
+            <pre><code>return clip;
+            </code></pre>
+            
+            <p>e.g., Modifying a string to upper case</p>
+            
+            <pre><code>var result = clipText.toUpperCase();
+            return result;
+            </code></pre>
+            
+            <h3 id="using-external-libraries">Using external libraries</h3>
+            
+            <p>You can load commonly used functions from external libraries in JavaScript. To load them, use require() method of ClipMenu object.</p>
+            
+            <p>e.g., Loading inflection-js</p>
+            
+            <pre><code>ClipMenu.require('inflection');
+            </code></pre>
+            
+            <p>The argument of require() method is a library file name you want to load. The ".js" extension can be omitted. You can check a return value whether the loading succeed or fail. 1 is success, 0 is not.</p>
+            
+            <p>e.g., Checking a return value of require() method</p>
+            
+            <pre><code>var isExist = ClipMenu.require('inflection');
+            if (!isExist) {
+                throw new Error('Could not find the library');
+            }
+            </code></pre>
+            
+            <p>After the loading successfully, you can use functions defined in the library.</p>
+            
+            <p>e.g., Using capitalize() method defined in inflection-js</p>
+            
+            <pre><code>clipText.capitalize();
+            </code></pre>
+            
+            <p>ClipMenu can load libraries from a folder inside application bundle or user installed folder.</p>
+            
+            <p>Place external libraries to the following path:</p>
+            
+            <p>/Users/USERNAME/Library/Application Support/ClipMenu/script/lib</p>
+            
+            <h3 id="user-input">User Input</h3>
+            
+            <p>Using prompt() method, you can use a string inputted by user.</p>
+            
+            <p>e.g., Generating HTML code combined with user input</p>
+            
+            <pre><code>var input = prompt('Enter a title:');
+            return '&lt;a href="' + clipText + '" title="' + input + '"&gt;' + input + '&lt;/a&gt;';
+            </code></pre>
+            
+            <h3 id="changing-string-attributes">Changing string attributes</h3>
+            
+            <p>You can change string attributes of a plain text, RTF and RTFD. To change attributes, pass an object as argument of methods to specify color or font.</p>
+            
+            <h4 id="methods">Methods</h4>
+            
+            <ul>
+              <li>
+                <h5 id="addstringattributes-attributes-">addStringAttributes( attributes )</h5>
+            
+                <p>You can add the attributes to the text you selected.</p>
+              </li>
+              <li>
+                <h5 id="setstringattributes-attributes-">setStringAttributes( attributes )</h5>
+            
+                <p>You can set the attributes for the text you selected to the
+            specified attributes. These new attributes replace any attributes
+            previously associated with the text.</p>
+              </li>
+            </ul>
+            
+            <h4 id="available-attributes">Available Attributes:</h4>
+            
+            <ul>
+              <li>
+                <h5 id="color">Color</h5>
+            
+                <p>Specifies foreground and background colors as a hex value or an <a href="http://en.wikipedia.org/wiki/Web_colors">HTML color name</a>.</p>
+            
+                <p>e.g., Set foreground color blue</p>
+            
+                <pre><code>  var attributes = {
+                  'color': {
+                      'foreground': '#0000ff',
+                  },
+              }
+              clip.setStringAttributes(attributes);
+              return clip;
+            
+            ![Set foreground color blue](/images/help/string_attributes_01.png)
+            </code></pre>
+            
+                <p>e.g., Set foreground color blue and background yellow</p>
+            
+                <pre><code>  var attributes = {
+                  'color': {
+                      'foreground': 'blue',
+                      'background': 'yellow',
+                  },
+              }
+              clip.setStringAttributes(attributes);
+              return clip;
+            </code></pre>
+            
+                <p><img alt="Set foreground color blue and background yellow" width="318" height="92" src="/images/help/string_attributes_02.png" /></p>
+              </li>
+              <li>
+                <h5 id="font">Font</h5>
+            
+                <p>Specifies font face and size.</p>
+            
+                <p>e.g., Set font Lucida Grande</p>
+            
+                <pre><code>  var attributes = {
+                  'font' : {
+                      'name': 'Lucida Grande',
+                  },
+              }
+              clip.setStringAttributes(attributes);
+              return clip;
+            </code></pre>
+            
+                <p><img alt="Set font Lucida Grande" width="318" height="92" src="/images/help/string_attributes_03.png" /></p>
+            
+                <p>e.g., Set font Helvetica Bold 24 points</p>
+            
+                <pre><code>  var attributes = {
+                  'font' : {
+                      'name': 'Helvetica Bold',
+                      'size': 24.0,
+                  },
+              }
+              clip.setStringAttributes(attributes);
+              return clip;
+            </code></pre>
+            
+                <p><img alt="Set font Helvetica Bold 24 points" width="318" height="92" src="/images/help/string_attributes_04.png" /></p>
+              </li>
+              <li>
+                <h5 id="underline">Underline</h5>
+            
+                <p>Specifies underline style and pattern.</p>
+            
+                <p>Available values:</p>
+            
+                <p>Styles: none, single, thick, double<br />
+              Patterns: solid, dot, dash, dashdot, dashdotdot<br />
+              ByWord: true/false</p>
+            
+                <p>e.g., Standard underline</p>
+            
+                <pre><code>  var attributes = {
+                  'underline': {
+                      'style': 'single',
+                      'pattern': 'solid',
+                  },
+              }
+              clip.setStringAttributes(attributes);
+              return clip;
+            </code></pre>
+            
+                <p><img alt="Standard underline" width="318" height="92" src="/images/help/string_attributes_05.png" /></p>
+            
+                <p>e.g., Double dot underline</p>
+            
+                <pre><code>  var attributes = {
+                  'underline': {
+                      'style': 'double',
+                      'pattern': 'dot',
+                  },
+              }
+              clip.setStringAttributes(attributes);
+              return clip;
+            </code></pre>
+            
+                <p><img alt="Double underline" width="318" height="92" src="/images/help/string_attributes_06.png" /></p>
+            
+                <p>e.g., Thick dash underline by word</p>
+            
+                <pre><code>  var attributes = {
+                  'underline': {
+                      'style': 'thick',
+                      'pattern': 'solid',
+                      'byWord': true,
+                  },
+              }
+              clip.setStringAttributes(attributes);
+              return clip;
+            </code></pre>
+            
+                <p><img alt="Thick dash underline by word" width="318" height="92" src="/images/help/string_attributes_07.png" /></p>
+              </li>
+            </ul>
+            
+            <h3 id="notes">Notes</h3>
+            
+            <p>alert() and confirm() methods do not work.</p>
+          </div>
+          <div id='sidebar'>
+            <ul>
+              <li>
+                <h3>
+                  Download
+                </h3>
+                <div class='box'></div>
+                <p>
+                  <a href="https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_0.4.3.dmg">ClipMenu 0.4.3</a>
+                  <img width="50" height="46" class="left" src="/images/icon/icon_seed.png" />
+                </p>
+                <p>ClipMenu is a <strong>freeware</strong> application. You can use it freely.</p>
+                <p>
+                  <a href="/dev/">Latest development version</a>
+                  is also available.
+                </p>
+              </li>
+              <li>
+                <h3>
+                  System Requirements
+                </h3>
+                <div class='box'></div>
+                <p><strong>Mac OS X 10.5</strong> (Leopard) or later.</p>
+                <p><strong>64-bit</strong> support in <strong>Mac OS X 10.6</strong> (Snow Leopard) or later.</p>
+                <p>ClipMenu is a <strong>Universal binary</strong> so it will run on Intel and PowerPC Macs.</p>
+                <div class='center'>
+                  <a href="http://sparkle.andymatuschak.org/"><img width="120" height="40" alt="Updates by Sparkle" src="/images/icon/updates_by_sparkle.png" />
+                  </a>
+                </div>
+              </li>
+              <li>
+                <h3>
+                  Donations
+                </h3>
+                <div class='box'>
+                  <p>
+                    ClipMenu is freeware. However, if you find it really useful, you can show your support by clicking the PayPal button bellow to
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=6108608">donate</a>
+                    .
+                  </p>
+                  <div class='center' id='donation'>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" accept-charset="UTF-8" method="post"><input name='cmd' type='hidden' value='_s-xclick'>
+                    <input name='hosted_button_id' type='hidden' value='6108608'>
+                    <input alt='PayPal - The safer, easier way to pay online!' border='0' name='submit' src='/images/icon/paypal_64x40.png' type='image'>
+                    <img width="1" height="1" border="0" src="https://www.paypal.com/ja_JP/i/scr/pixel.gif" />
+                    </form>
+                  </div>
+                  <p>Thanks for your support!</p>
+                </div>
+              </li>
+              <li>
+                <h3>Twitter</h3>
+                <div class='box'>
+                  <div id='twitter_div'>
+                    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/clipmenu" data-widget-id="524195042278141953">Tweets by @clipmenu</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <h3>Visitors</h3>
+                <div class='box center'>
+                  <a href="http://flagcounter.com/more/9yz"><img src="http://flagcounter.com/count/9yz/bg=FFFFFF/txt=000000/border=CCCCCC/columns=2/maxflags=10/viewers=3/labels=0/" alt="free counters" border="0"></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- end #sidebar -->
+          <div class='clear'></div>
+          <div id='widebar'>
+            <div id='colA'>
+              <h3>
+                Contributors
+              </h3>
+              <p>Many thanks to people who helped us to develop ClipMenu!</p>
+              <p>
+                <a href="/credits/">Special credits&hellip;</a>
+              </p>
+            </div>
+            <div id='colB'>
+              <h3>
+                Testimonials
+              </h3>
+              <p>"Excellent. This is the best clipboard history tool I've seen so far." by mfichtner at iusethis</p>
+              <p>
+                <a href="/testimonials/">Read more&hellip;</a>
+              </p>
+            </div>
+            <div id='colC'>
+              <h3>
+                Screenshots
+              </h3>
+              <ul class='thumbnails'>
+                <a data-lightbox="bottom-screenshots" href="/images/screenshot/en/statusitem.jpg"><img width="75" height="75" src="/images/screenshot/en/statusitem_s.jpg" />
+                </a>
+                <a data-lightbox="bottom-screenshots" href="/images/screenshot/en/menu.jpg"><img width="75" height="75" src="/images/screenshot/en/menu_s.jpg" />
+                </a>
+                <a data-lightbox="bottom-screenshots" href="/images/screenshot/en/snippetmenu.jpg"><img width="75" height="75" src="/images/screenshot/en/snippetmenu_s.jpg" />
+                </a>
+                <a data-lightbox="bottom-screenshots" href="/images/screenshot/en/pref-general.jpg"><img width="75" height="75" src="/images/screenshot/en/pref-general_s.jpg" />
+                </a>
+              </ul>
+            </div>
+            <div class='clear'></div>
+          </div>
+        </div>
+      </div>
+      <div id='footer'>
+        <div id='footer-wrapper'>
+          <p>
+            Content available in
+            <a onclick="setLocale('en')" href="/help/custom-actions/">English</a>
+            and
+            <a onclick="setLocale('ja')" href="/ja/help/custom-actions/">Japanese</a>
+            .
+          </p>
+          <p>(c) 2008-2014 <a href="http://www.naotaka.com/" title="naotaka.com">Naotaka Morimoto</a>. ClipMenu icon design by <a href="http://www.max.hi-ho.ne.jp/painter/" title="K2DesignWorks">K2DesignWorks</a>.<br />HTML design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+  <!-- Universal Analytics -->
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-104117-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>
