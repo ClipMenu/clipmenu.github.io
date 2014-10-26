@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ClipMenu ブログ</title>
+  <subtitle>ClipMenuの開発ブログです。</subtitle>
+  <id>http://www.clipmenu.com/ja/blog</id>
+  <link href="http://www.clipmenu.com/ja/blog"/>
+  <link href="http://www.clipmenu.com/ja/blog/ja/blog/feed.xml" rel="self"/>
+  <updated>2014-10-26T20:55:00+09:00</updated>
+  <author>
+    <name>Naotaka Morimoto</name>
+  </author>
+  <entry>
+    <title>ClipMenu 1.0へ向けて</title>
+    <link rel="alternate" href="http://www.clipmenu.com/ja/blog/2014/10/26/the-road-to-clipmenu-1-0/"/>
+    <id>http://www.clipmenu.com/ja/blog/2014/10/26/the-road-to-clipmenu-1-0/</id>
+    <published>2014-10-26T20:55:00+09:00</published>
+    <updated>2014-10-26T20:55:01+09:00</updated>
+    <author>
+      <name>Naotaka Morimoto</name>
+    </author>
+    <content type="html">&lt;p&gt;長らくお待たせしましたが、ついにClipMenuの開発が再開されました。&lt;/p&gt;
+
+&lt;p&gt;ClipMenuは、Appleの新しい開発言語であるSwiftによってゼロから書き直されました。Mac OS X 10.10 Yosemite や 10.9 Mavericksとの親和性も高いため、最新の環境でも安心してお使い頂けます。&lt;/p&gt;
+
+&lt;p&gt;旧バージョンに含まれていた殆どの機能を実装する予定ですが、リリーススケジュールとの兼ね合いから、いくつかの機能は1.0リリースに含まれないかもしれません。&lt;/p&gt;
+
+&lt;h3 id="section"&gt;1.0に含まれる予定の機能&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;クリップボード履歴&lt;/li&gt;
+  &lt;li&gt;スニペット&lt;/li&gt;
+  &lt;li&gt;履歴の検索&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="section-1"&gt;1.0に含まれるか未定の機能&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;アクション&lt;/li&gt;
+  &lt;li&gt;クラウドによる同期&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="section-2"&gt;アルファテスト&lt;/h3&gt;
+
+&lt;p&gt;来月からアルファテストを実施予定です。詳細はこの公式ブログや&lt;a href="https://twitter.com/clipmenu"&gt;Twitter&lt;/a&gt;にて、後日発表させて頂きます。&lt;/p&gt;
+
+&lt;h3 id="section-3"&gt;価格&lt;/h3&gt;
+
+&lt;p&gt;ClipMenu 1.0は有料、あるいはフリーミアムのソフトウェアとしてMac App Storeでリリースを予定しています。&lt;/p&gt;
+
+&lt;p&gt;無料の試用版もこのサイトで配布予定です。ご購入の前にこちらもご活用ください。なお、Appleの制約により、Mac App Store外で配布されるバージョンでは一部機能（iCloud syncなど）が含まれないかもしれません。予めご了承ください。&lt;/p&gt;
+
+&lt;h3 id="section-4"&gt;最後に&lt;/h3&gt;
+
+&lt;p&gt;これまでClipMenuをご支援頂いた皆様に、改めて御礼申し上げます。今後とも宜しくお願い致します。&lt;/p&gt;
+</content>
+  </entry>
+</feed>

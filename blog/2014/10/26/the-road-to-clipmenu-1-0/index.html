@@ -11,7 +11,7 @@
   -->
   <head>
     <meta charset='utf-8'>
-    <title>Testimonials - ClipMenu.com</title>
+    <title>The Road to ClipMenu 1.0 - ClipMenu.com</title>
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <link href="/stylesheets/glyphicons.css" rel="stylesheet" type="text/css" />
@@ -35,11 +35,11 @@
           <div id='locale'>
             <ul>
               <li>
-                <a onclick="setLocale('en')" href="/testimonials/"><img width="16" height="11" src="/images/flag/en.png" />
+                <a onclick="setLocale('en')" href="/blog/2014/10/26/the-road-to-clipmenu-1-0/"><img width="16" height="11" src="/images/flag/en.png" />
                 </a>
               </li>
               <li>
-                <a onclick="setLocale('ja')" href="/ja/testimonials/"><img width="16" height="11" src="/images/flag/ja.png" />
+                <a onclick="setLocale('ja')" href="/ja/blog/2014/10/26/the-road-to-clipmenu-1-0/"><img width="16" height="11" src="/images/flag/ja.png" />
                 </a>
               </li>
             </ul>
@@ -71,45 +71,92 @@
             </script>
           </div>
           <div id='content'>
-            <p>What people are saying about ClipMenu.</p>
-            
-            <h3 id="iusethis">iusethis</h3>
-            
-            <ul>
-              <li>
-                <p><a href="http://osx.iusethis.com/app/clipmenu">bitnix</a></p>
-            
-                <blockquote>
-                  <p>What a gem! Thanks whoever posted it here. Best in show.</p>
-                </blockquote>
-              </li>
-              <li>
-                <p><a href="http://osx.iusethis.com/app/clipmenu">mfichtner</a></p>
-            
-                <blockquote>
-                  <p>Excellent. This is the best clipboard history tool I've seen so far.</p>
-                </blockquote>
-              </li>
-            </ul>
-            
-            <h3 id="macupdate">MacUpdate</h3>
-            
-            <ul>
-              <li>
-                <p><a href="http://macupdate.com/info.php/id/29988/clipmenu">TSEHOV</a></p>
-            
-                <blockquote>
-                  <p>I've been testing this software for a couple of ours and I really like it.</p>
-                </blockquote>
-              </li>
-              <li>
-                <p><a href="http://macupdate.com/info.php/id/29988/clipmenu">BILLY THE BIKER</a></p>
-            
-                <blockquote>
-                  <p>I have also been looking strongly at this app. It's FREE, has separate snippet categories, isn't overdone like some clipboard managers, and it's FREE.</p>
-                </blockquote>
-              </li>
-            </ul>
+            <article class='blog-post'>
+              <h2 class='blog-post-title'>The Road to ClipMenu 1.0</h2>
+              <p class='blog-post-meta post-time'>
+                <span class='glyphicon glyphicon-time'></span>
+                <time datetime='2014-10-26T20:54:00+09:00'>October 26, 2014</time>
+                <ul class='tag-line'>
+                  <li><a href="/blog/tags/updates/">updates</a></li>
+                </ul>
+              </p>
+              <p>ClipMenu is back after a long absence. I'm sorry to have kept you waiting for such a long time.</p>
+              
+              <p>ClipMenu has been rewritten from scratch in Apple's new Swift language. So it is suitable for Mac OS X 10.10 Yosemite and 10.9 Mavericks.</p>
+              
+              <p>Almost all of 0.4.4's features will be included in the future releases, but some features may not be implemented in 1.0 release.</p>
+              
+              <h3 id="features-will-be-included-in-10">Features will be included in 1.0:</h3>
+              
+              <ul>
+                <li>Clipboard History</li>
+                <li>Snippets</li>
+                <li>Search words in history</li>
+              </ul>
+              
+              <h3 id="features-may-not-be-included-in-10">Features may not be included in 1.0:</h3>
+              
+              <ul>
+                <li>Actions</li>
+                <li>cloud sync</li>
+              </ul>
+              
+              <h3 id="alpha-testing">Alpha Testing</h3>
+              
+              <p>I am planning to alpha-test ClipMenu next month. You could see its announcement at this blog or <a href="https://twitter.com/clipmenu">Twitter account</a>. If you interested in it, please keep watching them.</p>
+              
+              <h3 id="pricing">Pricing</h3>
+              
+              <p>ClipMenu 1.0 will be paid or freemium software at Apple's Mac App Store. If you are a donor you will receive a promo code to download it for free of charge.</p>
+              
+              <p>Free trial version will be also available. However due to Apple's restrictions some features like iCloud sync would not be included in releases distributed outside of Mac App Store.</p>
+              
+              <h3 id="conclusion">Conclusion</h3>
+              
+              <p>Thank you for all of you who support ClipMenu until now.</p>
+              
+              <p>As always, any and all feedback is welcome.</p>
+              <div class='social-button-container'>
+                <!-- Twitter -->
+                <div class='social-button'>
+                  <a class='twitter-share-button' data-via='clipmenu' href='https://twitter.com/share'></a>
+                  <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                  </script>
+                </div>
+              </div>
+              <div class='row'>
+                <ul class='article-links'>
+                </ul>
+              </div>
+              <div class='row'>
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                //<![CDATA[
+                                  var disqus_shortname = 'clipmenu';
+                          
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                //]]>
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                <div class='bottom-ad'>
+                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                  <!-- ClipMenu Blog bottom (468x60) -->
+                  <ins class="adsbygoogle"
+                  style="display:inline-block;width:468px;height:60px"
+                  data-ad-client="ca-pub-9827496444724879"
+                  data-ad-slot="1248453806"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+              </div>
+            </article>
           </div>
           <div id='sidebar'>
             <ul>
@@ -225,9 +272,9 @@
         <div id='footer-wrapper'>
           <p>
             Content available in
-            <a onclick="setLocale('en')" href="/testimonials/">English</a>
+            <a onclick="setLocale('en')" href="/blog/2014/10/26/the-road-to-clipmenu-1-0/">English</a>
             and
-            <a onclick="setLocale('ja')" href="/ja/testimonials/">Japanese</a>
+            <a onclick="setLocale('ja')" href="/ja/blog/2014/10/26/the-road-to-clipmenu-1-0/">Japanese</a>
             .
           </p>
           <p>(c) 2008-2014 <a href="http://www.naotaka.com/" title="naotaka.com">Naotaka Morimoto</a>. ClipMenu icon design by <a href="http://www.max.hi-ho.ne.jp/painter/" title="K2DesignWorks">K2DesignWorks</a>.<br />HTML design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ClipMenu Blog</title>
+  <subtitle>Blog of development of ClipMenu</subtitle>
+  <id>http://www.clipmenu.com/blog</id>
+  <link href="http://www.clipmenu.com/blog"/>
+  <link href="http://www.clipmenu.com/blog/blog/feed.xml" rel="self"/>
+  <updated>2014-10-26T20:54:00+09:00</updated>
+  <author>
+    <name>Naotaka Morimoto</name>
+  </author>
+  <entry>
+    <title>The Road to ClipMenu 1.0</title>
+    <link rel="alternate" href="http://www.clipmenu.com/blog/2014/10/26/the-road-to-clipmenu-1-0/"/>
+    <id>http://www.clipmenu.com/blog/2014/10/26/the-road-to-clipmenu-1-0/</id>
+    <published>2014-10-26T20:54:00+09:00</published>
+    <updated>2014-10-26T20:54:41+09:00</updated>
+    <author>
+      <name>Naotaka Morimoto</name>
+    </author>
+    <content type="html">&lt;p&gt;ClipMenu is back after a long absence. I'm sorry to have kept you waiting for such a long time.&lt;/p&gt;
+
+&lt;p&gt;ClipMenu has been rewritten from scratch in Apple's new Swift language. So it is suitable for Mac OS X 10.10 Yosemite and 10.9 Mavericks.&lt;/p&gt;
+
+&lt;p&gt;Almost all of 0.4.4's features will be included in the future releases, but some features may not be implemented in 1.0 release.&lt;/p&gt;
+
+&lt;h3 id="features-will-be-included-in-10"&gt;Features will be included in 1.0:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clipboard History&lt;/li&gt;
+  &lt;li&gt;Snippets&lt;/li&gt;
+  &lt;li&gt;Search words in history&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="features-may-not-be-included-in-10"&gt;Features may not be included in 1.0:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Actions&lt;/li&gt;
+  &lt;li&gt;cloud sync&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="alpha-testing"&gt;Alpha Testing&lt;/h3&gt;
+
+&lt;p&gt;I am planning to alpha-test ClipMenu next month. You could see its announcement at this blog or &lt;a href="https://twitter.com/clipmenu"&gt;Twitter account&lt;/a&gt;. If you interested in it, please keep watching them.&lt;/p&gt;
+
+&lt;h3 id="pricing"&gt;Pricing&lt;/h3&gt;
+
+&lt;p&gt;ClipMenu 1.0 will be paid or freemium software at Apple's Mac App Store. If you are a donor you will receive a promo code to download it for free of charge.&lt;/p&gt;
+
+&lt;p&gt;Free trial version will be also available. However due to Apple's restrictions some features like iCloud sync would not be included in releases distributed outside of Mac App Store.&lt;/p&gt;
+
+&lt;h3 id="conclusion"&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Thank you for all of you who support ClipMenu until now.&lt;/p&gt;
+
+&lt;p&gt;As always, any and all feedback is welcome.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
