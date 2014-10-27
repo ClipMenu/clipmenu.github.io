@@ -5,16 +5,75 @@
   <id>http://www.clipmenu.com/ja/blog</id>
   <link href="http://www.clipmenu.com/ja/blog"/>
   <link href="http://www.clipmenu.com/ja/blog/ja/blog/feed.xml" rel="self"/>
-  <updated>2014-10-26T20:55:00+09:00</updated>
+  <updated>2014-10-27T19:59:00+09:00</updated>
   <author>
     <name>Naotaka Morimoto</name>
   </author>
+  <entry>
+    <title>ClipMenuの模倣アプリについて</title>
+    <link rel="alternate" href="http://www.clipmenu.com/ja/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/"/>
+    <id>http://www.clipmenu.com/ja/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/</id>
+    <published>2014-10-27T19:59:00+09:00</published>
+    <updated>2014-10-27T19:59:46+09:00</updated>
+    <author>
+      <name>Naotaka Morimoto</name>
+    </author>
+    <content type="html">&lt;p&gt;半年前から、Mac App StoreでのClipMenuの模倣アプリに悩まされています。&lt;/p&gt;
+
+&lt;p&gt;こちらが件の模倣アプリ: &lt;a rel="nofollow" href="https://itunes.apple.com/app/clipmenu/id804607288"&gt;https://itunes.apple.com/app/clipmenu/id804607288&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="section"&gt;問題点&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ClipMenuを製品名として使用していること&lt;/li&gt;
+  &lt;li&gt;MITライセンスを遵守していないこと&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ClipMenuは2014年3月にMITライセンスで、オープンソースソフトウェアとしてソースコードを公開しました。派生物の販売もライセンスを遵守しているのであれば問題ありません。ただ、この開発者には残念ながらライセンスに従ってもらえていません。&lt;/p&gt;
+
+&lt;p&gt;また、全く同じ名前が使われているために、こちらで配布しているClipMenuと誤認して購入されている例も発生しています。模倣アプリのサポートに問い合わせても反応が無いため、検索サイトで検索してこちらに辿り着かれているようです。&lt;/p&gt;
+
+&lt;p&gt;この様に、模倣アプリによるClipMenuという名称の使用はユーザーの方に無用の混乱を招くため、好ましくないと考えます。よって、当該開発者には名称の変更を要求しています。&lt;/p&gt;
+
+&lt;h3 id="section-1"&gt;事の経緯&lt;/h3&gt;
+
+&lt;p&gt;第一報は、4月に&lt;a href="https://twitter.com/fisio"&gt;@fisio&lt;/a&gt;さんからTwitter経由でお知らせ頂きました。すぐにメールやサポートサイトとしてリンクされていたTumblrを通じて相手方開発者のAlfred Danny氏とコンタクトを取ろうと難度も試みましたが、一向に返事を受け取ることができませんでした。&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;&lt;a href="https://twitter.com/naotakaM"&gt;@naotakaM&lt;/a&gt; Thank you again for &lt;a href="https://twitter.com/clipmenu"&gt;@clipmenu&lt;/a&gt;! A same named app on App Store &lt;a href="http://t.co/jqyWZul0PL"&gt;http://t.co/jqyWZul0PL&lt;/a&gt; Is that yours or just an unauthorized clone?&lt;/p&gt;&amp;mdash; fisio  (@fisio) &lt;a href="https://twitter.com/fisio/status/454145806321188865"&gt;April 10, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;h3 id="apple"&gt;Appleへの通報&lt;/h3&gt;
+
+&lt;p&gt;そこでこういった違反について異議を申し立てる場である&lt;a href="http://www.apple.com/legal/internet-services/itunes/appstorenotices/"&gt;iTunes Content Dispute&lt;/a&gt;からAppleに対処を要請しました。しかしながら、残念たことに、2通の自動応答メールを返送してきたきりで、更なる問い合わせには一切答えてくれませんでした。&lt;/p&gt;
+
+&lt;p&gt;参考ながら、この件に割り振られた識別番号は&lt;strong&gt;APP35999&lt;/strong&gt;です。&lt;/p&gt;
+
+&lt;h3 id="section-2"&gt;皆さんのお力をお貸しください&lt;/h3&gt;
+
+&lt;p&gt;どうかAppleにこの件を報告して、問題の解決を促してください。連絡先は「&lt;a href="https://getsupport.apple.com/"&gt;Apple サポートにお問い合わせ
+&lt;/a&gt;」などがご利用いだだけます。&lt;/p&gt;
+
+&lt;p&gt;文面はご自由ですが、参考例はこちらです:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Alfred DannyのClipMenu(Apple ID: 804607288)は正規のClipMenuと誤認させる模倣アプリです。正規のClipMenuは、Naotaka Morimotoにより2008年より公開されています。&lt;/p&gt;
+
+  &lt;p&gt;ホームページ: http://www.clipmenu.com&lt;/p&gt;
+
+  &lt;p&gt;また、ClipMenuは2014年3月にMITライセンスでソースコードが公開されましたが、Danny氏はこれにも違反しています。ライセンス違反のソフトウェアはMASから削除するべきです。&lt;/p&gt;
+
+  &lt;p&gt;GitHubリポジトリ: https://github.com/naotaka/ClipMenu&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ご協力いただければ幸いです。よろしくお願いします。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>ClipMenu 1.0へ向けて</title>
     <link rel="alternate" href="http://www.clipmenu.com/ja/blog/2014/10/26/the-road-to-clipmenu-1-0/"/>
     <id>http://www.clipmenu.com/ja/blog/2014/10/26/the-road-to-clipmenu-1-0/</id>
     <published>2014-10-26T20:55:00+09:00</published>
-    <updated>2014-10-26T20:55:01+09:00</updated>
+    <updated>2014-10-26T21:07:52+09:00</updated>
     <author>
       <name>Naotaka Morimoto</name>
     </author>
