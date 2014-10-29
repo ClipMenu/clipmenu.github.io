@@ -14,13 +14,11 @@
     <link rel="alternate" href="http://www.clipmenu.com/ja/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/"/>
     <id>http://www.clipmenu.com/ja/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/</id>
     <published>2014-10-27T19:59:00+09:00</published>
-    <updated>2014-10-29T13:08:29+09:00</updated>
+    <updated>2014-10-29T19:20:16+09:00</updated>
     <author>
       <name>Naotaka Morimoto</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Updated (10/29 JST)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;半年前から、Mac App StoreでのClipMenuの模倣アプリに悩まされています。&lt;/p&gt;
+    <content type="html">&lt;p&gt;半年前から、Mac App StoreでのClipMenuの模倣アプリに悩まされています。&lt;/p&gt;
 
 &lt;p&gt;こちらが件の模倣アプリ: &lt;a rel="nofollow" href="https://itunes.apple.com/app/clipmenu/id804607288"&gt;https://itunes.apple.com/app/clipmenu/id804607288&lt;/a&gt;&lt;/p&gt;
 
@@ -52,24 +50,28 @@
 
 &lt;h3 id="section-2"&gt;皆さんのお力をお貸しください&lt;/h3&gt;
 
-&lt;p&gt;&lt;del&gt;
-どうかAppleにこの件を報告して、問題の解決を促してください。連絡先は「&lt;a href="https://getsupport.apple.com/"&gt;Apple サポートにお問い合わせ
-&lt;/a&gt;」などがご利用いだだけます。
-&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;どうかAppleにこの件を報告して、問題の解決を促してください。連絡先は「&lt;a href="https://getsupport.apple.com/"&gt;Apple サポートにお問い合わせ
+&lt;/a&gt;」などがご利用いだだけます。&lt;/p&gt;
 
-&lt;!-- 文面はご自由ですが、参考例はこちらです:
+&lt;p&gt;文面はご自由ですが、参考例はこちらです:&lt;/p&gt;
 
-&gt; Alfred DannyのClipMenu(Apple ID: 804607288)は正規のClipMenuと誤認させる模倣アプリです。正規のClipMenuは、Naotaka Morimotoにより2008年より公開されています。
-&gt;
-&gt; ホームページ: http://www.clipmenu.com
-&gt;
-&gt; また、ClipMenuは2014年3月にMITライセンスでソースコードが公開されましたが、Danny氏はこれにも違反しています。ライセンス違反のソフトウェアはMASから削除するべきです。
-&gt;
-&gt; GitHubリポジトリ: https://github.com/naotaka/ClipMenu
+&lt;blockquote&gt;
+  &lt;p&gt;Alfred DannyのClipMenu(Apple ID: 804607288)は正規のClipMenuと誤認させる模倣アプリです。正規のClipMenuは、Naotaka Morimotoにより2008年より公開されています。&lt;/p&gt;
 
-ご協力いただければ幸いです。よろしくお願いします。 --&gt;
+  &lt;p&gt;ホームページ: http://www.clipmenu.com&lt;/p&gt;
+
+  &lt;p&gt;また、ClipMenuは2014年3月にMITライセンスでソースコードが公開されましたが、Danny氏はこれにも違反しています。ライセンス違反のソフトウェアはMASから削除するべきです。&lt;/p&gt;
+
+  &lt;p&gt;GitHubリポジトリ: https://github.com/naotaka/ClipMenu&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ご協力いただければ幸いです。よろしくお願いします。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Updated (10/29 JST)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;ついにApple社から返信をもらうことが出来ました。ご協力、ありがとうございます！&lt;/p&gt;
+
+&lt;p&gt;ただし、Apple社の法務部からの返答は保証できないとのことなので、何とか解決してもらえるように頑張ってみます。&lt;/p&gt;
 </content>
   </entry>
   <entry>
