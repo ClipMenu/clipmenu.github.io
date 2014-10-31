@@ -11,7 +11,7 @@
   -->
   <head>
     <meta charset='utf-8'>
-    <title>Ripped off ClipMenu on Mac App Store - ClipMenu.com</title>
+    <title>Compatibility testing with JetBrains IDEs - ClipMenu.com</title>
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <link href="/stylesheets/glyphicons.css" rel="stylesheet" type="text/css" />
@@ -35,11 +35,11 @@
           <div id='locale'>
             <ul>
               <li>
-                <a onclick="setLocale('en')" href="/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/"><img width="16" height="11" src="/images/flag/en.png" />
+                <a onclick="setLocale('en')" href="/blog/2014/10/31/compatibility-testing-with-jetbrains-ides/"><img width="16" height="11" src="/images/flag/en.png" />
                 </a>
               </li>
               <li>
-                <a onclick="setLocale('ja')" href="/ja/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/"><img width="16" height="11" src="/images/flag/ja.png" />
+                <a onclick="setLocale('ja')" href="/ja/blog/2014/2014-10-31-compatibility-testing-with-jetbrains-ides.html"><img width="16" height="11" src="/images/flag/ja.png" />
                 </a>
               </li>
             </ul>
@@ -72,74 +72,66 @@
           </div>
           <div id='content'>
             <article class='blog-post'>
-              <h2 class='blog-post-title'>Ripped off ClipMenu on Mac App Store</h2>
+              <h2 class='blog-post-title'>Compatibility testing with JetBrains IDEs</h2>
               <p class='blog-post-meta post-time'>
                 <span class='glyphicon glyphicon-time'></span>
-                <time datetime='2014-10-27T19:59:00+09:00'>October 27, 2014</time>
+                <time datetime='2014-10-31T11:41:00+09:00'>October 31, 2014</time>
                 <ul class='tag-line'>
-                  <li><a href="/blog/tags/apple/">Apple</a></li>
+                  <li><a href="/blog/tags/testing/">testing</a></li>
                 </ul>
               </p>
-              <p>ClipMenu has been ripped off on Apple's Mac App Store.</p>
+              <p>JetBrains IDE applications have had compatibility issues with some clipboard managers include ClipMenu.</p>
               
-              <p>This is the rip-off: <a rel="nofollow" href="https://itunes.apple.com/app/clipmenu/id804607288">https://itunes.apple.com/app/clipmenu/id804607288</a></p>
+              <ul>
+                <li><a href="https://youtrack.jetbrains.com/issue/IDEA-114252">IDEA-114252 WebStorm clipboard history conflicts with external clipboard manager (ClipMenu)</a></li>
+              </ul>
               
-              <p>I need your help!</p>
+              <p>As I recently found a workaround for this issue on my side, I have built a testing version of ClipMenu. This is not the best solution, so I hope JetBrains would fixed the incompatibility in the future.</p>
               
-              <h3 id="the-problems">The problems</h3>
+              <p><strong>WARNING</strong>:</p>
               
-              <p>The problems are these two:</p>
+              <ul>
+                <li>This version is for compatibility testing with JetBrains IDEs (such as IntelliJ IDEA, PhpStorm, RubyMine and WebStorm) purpose only.</li>
+                <li>It is not suitable for your daily use.</li>
+                <li>Don't use this version with apps not from JetBrains.</li>
+              </ul>
               
-              <ol>
-                <li>He uses ClipMenu as his product name.</li>
-                <li>He violated the MIT license.</li>
-              </ol>
+              <p>If you have done testing, please report your feedback to any address listed below:</p>
               
-              <p>I have open-sourced ClipMenu under the MIT license on March 2014. It is OK to sell derived work as long as you follow the license terms, but this guy has never followed it.</p>
-              
-              <p>And using the same name as the original application causes customers on Mac App Store confusing these two. I have received support requests from falsely recogized customers, because the rip-off's developer seems to avoid user support.</p>
-              
-              <h3 id="the-beginning">The Beginning</h3>
-              
-              <p>After I was notified by <a href="https://twitter.com/fisio">@fisio</a> in April, I have contacted the developer, named Alfred Danny, many times via email and Tumblr which is his support site, but he never replied to me.</p>
-              
-              <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/naotakaM">@naotakaM</a> Thank you again for <a href="https://twitter.com/clipmenu">@clipmenu</a>! A same named app on App Store <a href="http://t.co/jqyWZul0PL">http://t.co/jqyWZul0PL</a> Is that yours or just an unauthorized clone?</p>&mdash; fisio  (@fisio) <a href="https://twitter.com/fisio/status/454145806321188865">April 10, 2014</a></blockquote>
-              <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              
-              <h3 id="report-to-apple">Report to Apple</h3>
-              
-              <p>So I have reported this issue through <a href="http://www.apple.com/legal/internet-services/itunes/appstorenotices/">iTunes Content Dispute</a> to Apple. I received two auto-responded emails from them, however they never respond my further inquiries.</p>
-              
-              <p>The issue ID is <strong>APP35999</strong>.</p>
-              
-              <h3 id="need-your-help">Need your help!</h3>
-              
-              <p>Please help me report this app by going to: <a href="https://getsupport.apple.com/">Contact Apple Support
-              </a>.</p>
-              
-              <p>You can write whatever you want there, but this is an example:</p>
-              
-              <blockquote>
-                <p>ClipMenu by Alfred Danny (Apple ID: 804607288) is a ripped off app. The original one is at clipmenu.com created by Naotaka Morimoto, and never released on the Mac App Store yet.</p>
-              
-                <p>URL: http://www.clipmenu.com</p>
-              
-                <p>Using the same name as ClipMenu cause confusion to customers. This should be avoided.</p>
-              
-                <p>ClipMenu was open-sourced under the MIT license in March 2014. Mr. Danny violate this license.</p>
-              
-                <p>GitHub Repo: https://github.com/naotaka/ClipMenu</p>
-              
-                <p>Please delete this app from Mac App Store.</p>
-              </blockquote>
-              
-              <p>I need your support and help to report this app and get it banned from Mac App Store.</p>
-              
-              <p><strong>Updated (10/29 JST)</strong></p>
-              
-              <p>Finally I got responses from Apple people! But, unfortunately, nothing is solved yet.</p>
+              <ul>
+                <li><a href="https://github.com/naotaka/ClipMenu/issues/1">GitHub issue</a></li>
+                <li>This blog post</li>
+                <li><a href="https://twitter.com/clipmenu">Twitter</a></li>
+              </ul>
               
               <p>Thank you for your support.</p>
+              
+              <h3 id="download">Download</h3>
+              
+              <p><a href="https://dl.dropboxusercontent.com/u/1140644/clipmenu/ClipMenu-compatibility-testing-with-JetBrainsIDEs.zip">ClipMenu-compatibility-testing-with-JetBrainsIDEs.zip</a></p>
+              
+              <h3 id="system-requirement">System Requirement:</h3>
+              
+              <p>Mac OS X 10.9 or higher</p>
+              
+              <h3 id="how-to-install">How to Install:</h3>
+              
+              <ul>
+                <li>Copy 'ClipMenu.app' to /Applications or ~/Applications folder.</li>
+              </ul>
+              
+              <h3 id="how-to-uninstall">How to Uninstall:</h3>
+              
+              <ol>
+                <li>Quit ClipMenu</li>
+                <li>Remove a preference file and an application support folder below:
+                  <ul>
+                    <li>~/Library/Preferences/com.clipmenu.ClipMenu.plist</li>
+                    <li>~/Library/Application Support/com.clipmenu.ClipMenu</li>
+                  </ul>
+                </li>
+                <li>Remove ClipMenu.app</li>
+              </ol>
               <div class='social-button-container'>
                 <!-- Twitter -->
                 <div class='social-button'>
@@ -152,13 +144,8 @@
               <div class='row'>
                 <ul class='article-links'>
                   <li class='previous-article-link pull-left'>
-                    <a href="/blog/2014/10/26/the-road-to-clipmenu-1-0/"><span class='glyphicon glyphicon-circle-arrow-left'></span>
-                    The Road to C...
-                    </a>
-                  </li>
-                  <li class='next-article-link pull-right'>
-                    <a href="/blog/2014/10/31/compatibility-testing-with-jetbrains-ides/">Compatibility...
-                    <span class='glyphicon glyphicon-circle-arrow-right'></span>
+                    <a href="/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/"><span class='glyphicon glyphicon-circle-arrow-left'></span>
+                    Ripped off Cl...
                     </a>
                   </li>
                 </ul>
@@ -286,9 +273,9 @@
         <div id='footer-wrapper'>
           <p>
             Content available in
-            <a onclick="setLocale('en')" href="/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/">English</a>
+            <a onclick="setLocale('en')" href="/blog/2014/10/31/compatibility-testing-with-jetbrains-ides/">English</a>
             and
-            <a onclick="setLocale('ja')" href="/ja/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/">Japanese</a>
+            <a onclick="setLocale('ja')" href="/ja/blog/2014/2014-10-31-compatibility-testing-with-jetbrains-ides.html">Japanese</a>
             .
           </p>
           <p>(c) 2008-2014 <a href="http://www.naotaka.com/" title="naotaka.com">Naotaka Morimoto</a>. ClipMenu icon design by <a href="http://www.max.hi-ho.ne.jp/painter/" title="K2DesignWorks">K2DesignWorks</a>.<br />HTML design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>

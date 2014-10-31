@@ -5,10 +5,73 @@
   <id>http://www.clipmenu.com/blog</id>
   <link href="http://www.clipmenu.com/blog"/>
   <link href="http://www.clipmenu.com/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-10-27T19:59:00+09:00</updated>
+  <updated>2014-10-31T11:41:00+09:00</updated>
   <author>
     <name>Naotaka Morimoto</name>
   </author>
+  <entry>
+    <title>Compatibility testing with JetBrains IDEs</title>
+    <link rel="alternate" href="http://www.clipmenu.com/blog/2014/10/31/compatibility-testing-with-jetbrains-ides/"/>
+    <id>http://www.clipmenu.com/blog/2014/10/31/compatibility-testing-with-jetbrains-ides/</id>
+    <published>2014-10-31T11:41:00+09:00</published>
+    <updated>2014-10-31T11:41:50+09:00</updated>
+    <author>
+      <name>Naotaka Morimoto</name>
+    </author>
+    <content type="html">&lt;p&gt;JetBrains IDE applications have had compatibility issues with some clipboard managers include ClipMenu.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://youtrack.jetbrains.com/issue/IDEA-114252"&gt;IDEA-114252 WebStorm clipboard history conflicts with external clipboard manager (ClipMenu)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As I recently found a workaround for this issue on my side, I have built a testing version of ClipMenu. This is not the best solution, so I hope JetBrains would fixed the incompatibility in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This version is for compatibility testing with JetBrains IDEs (such as IntelliJ IDEA, PhpStorm, RubyMine and WebStorm) purpose only.&lt;/li&gt;
+  &lt;li&gt;It is not suitable for your daily use.&lt;/li&gt;
+  &lt;li&gt;Don't use this version with apps not from JetBrains.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have done testing, please report your feedback to any address listed below:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/naotaka/ClipMenu/issues/1"&gt;GitHub issue&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This blog post&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/clipmenu"&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thank you for your support.&lt;/p&gt;
+
+&lt;h3 id="download"&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://dl.dropboxusercontent.com/u/1140644/clipmenu/ClipMenu-compatibility-testing-with-JetBrainsIDEs.zip"&gt;ClipMenu-compatibility-testing-with-JetBrainsIDEs.zip&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="system-requirement"&gt;System Requirement:&lt;/h3&gt;
+
+&lt;p&gt;Mac OS X 10.9 or higher&lt;/p&gt;
+
+&lt;h3 id="how-to-install"&gt;How to Install:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Copy 'ClipMenu.app' to /Applications or ~/Applications folder.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="how-to-uninstall"&gt;How to Uninstall:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Quit ClipMenu&lt;/li&gt;
+  &lt;li&gt;Remove a preference file and an application support folder below:
+    &lt;ul&gt;
+      &lt;li&gt;~/Library/Preferences/com.clipmenu.ClipMenu.plist&lt;/li&gt;
+      &lt;li&gt;~/Library/Application Support/com.clipmenu.ClipMenu&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Remove ClipMenu.app&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   <entry>
     <title>Ripped off ClipMenu on Mac App Store</title>
     <link rel="alternate" href="http://www.clipmenu.com/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/"/>

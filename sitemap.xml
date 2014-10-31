@@ -13,6 +13,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://www.clipmenu.com/blog/2014/10/31/compatibility-testing-with-jetbrains-ides/</loc>
+    <lastmod>2014-10-31T11:41:50+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://www.clipmenu.com/blog/calendar/</loc>
     <lastmod>2014-10-25T16:21:19+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -188,6 +194,12 @@
   </url>
   <url>
     <loc>http://www.clipmenu.com/blog/tags/apple/</loc>
+    <lastmod>2014-10-25T00:11:30+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.clipmenu.com/blog/tags/testing/</loc>
     <lastmod>2014-10-25T00:11:30+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
