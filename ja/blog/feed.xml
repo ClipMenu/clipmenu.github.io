@@ -5,10 +5,110 @@
   <id>http://www.clipmenu.com/ja/blog</id>
   <link href="http://www.clipmenu.com/ja/blog"/>
   <link href="http://www.clipmenu.com/ja/blog/ja/blog/feed.xml" rel="self"/>
-  <updated>2014-10-27T19:59:00+09:00</updated>
+  <updated>2014-11-11T17:07:00+09:00</updated>
   <author>
     <name>Naotaka Morimoto</name>
   </author>
+  <entry>
+    <title>ClipMenu 1.0.0a1 リリース</title>
+    <link rel="alternate" href="http://www.clipmenu.com/ja/blog/2014/11/11/clipmenu-1-0-0a1-released/"/>
+    <id>http://www.clipmenu.com/ja/blog/2014/11/11/clipmenu-1-0-0a1-released/</id>
+    <published>2014-11-11T17:07:00+09:00</published>
+    <updated>2014-11-11T21:00:26+09:00</updated>
+    <author>
+      <name>Naotaka Morimoto</name>
+    </author>
+    <content type="html">&lt;p&gt;本日、ClipMenuの新しいアルファ版をリリースしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Screenshot" width="390" height="331" src="/images/blog/DarkModeOpenedMenu.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;※ ClipMenu 1.0.0a1はまだアルファテスト中です。この点に留意し、ご自身の責任においてご使用ください。&lt;/p&gt;
+
+&lt;h3 id="whats-new"&gt;What's new?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新生&lt;/li&gt;
+  &lt;li&gt;パフォーマンスの向上&lt;/li&gt;
+  &lt;li&gt;記憶可能な履歴件数の増加&lt;/li&gt;
+  &lt;li&gt;履歴ウィンドウ&lt;/li&gt;
+  &lt;li&gt;ポップオーバー・プレビュー&lt;/li&gt;
+  &lt;li&gt;Yosemite ready&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="section"&gt;新生&lt;/h4&gt;
+
+&lt;p&gt;新しいClipMenuはApple社の新言語Swiftによって一から書き直されました。これにより、今後長く安心してお使いいただける準備が整いました。&lt;/p&gt;
+
+&lt;h4 id="section-1"&gt;パフォーマンスの向上&lt;/h4&gt;
+
+&lt;p&gt;ClipMenu 0.4.xでは履歴を常にメモリに保持していましたが、新しいClipMenuではデータをディスク上に保持し、必要に応じて取り出す方式に改められました。そのため、以前に比べて省メモリで動くようになりました。&lt;/p&gt;
+
+&lt;h4 id="section-2"&gt;記憶可能な履歴件数の増加&lt;/h4&gt;
+
+&lt;p&gt;新しいClipMenuではCore Dataの採用により、より多くの件数の履歴を扱えるようになりました。&lt;/p&gt;
+
+&lt;p&gt;また、記憶する件数とメニューに表示する件数を別に設定できるようになりました。&lt;/p&gt;
+
+&lt;h4 id="section-3"&gt;履歴ウィンドウ&lt;/h4&gt;
+
+&lt;p&gt;新しく追加された履歴ウィンドウから、履歴の一覧・検索・削除が一括して行えます。&lt;/p&gt;
+
+&lt;p&gt;履歴を選択してから'Touch'ボタンを押せば、最終更新日時が更新され、メニューの最上部に移動させることもできるようになりました。&lt;/p&gt;
+
+&lt;h4 id="section-4"&gt;ポップオーバー・プレビュー&lt;/h4&gt;
+
+&lt;p&gt;新しいポップオーバー・プレビューはプレーンテキストだけでなく、リッチテキストや画像の表示もできるようになりました。プレビューが表示されるまでの待ち時間やアニメーションの可否は設定画面から行えます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Popover preview RTF" width="500" height="283" src="/images/blog/Popover-rtf.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Popover preview image" width="500" height="296" src="/images/blog/Popover-image.png" /&gt;&lt;/p&gt;
+
+&lt;h4 id="yosemite-ready"&gt;Yosemite ready&lt;/h4&gt;
+
+&lt;p&gt;新しいClipMenuはYosemiteに完全対応しています。もちろん、ダークモードをオンにしても大丈夫です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Dark Mode ready" width="296" height="80" src="/images/blog/DarkModeMenu.png" /&gt;&lt;/p&gt;
+
+&lt;h3 id="section-5"&gt;ダウンロード&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://dl.dropboxusercontent.com/u/1140644/clipmenu/ClipMenu-1.0.0a1.dmg"&gt;ClipMenu-1.0.0a1.dmg&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="section-6"&gt;必要システム:&lt;/h3&gt;
+
+&lt;p&gt;Mac OS X 10.9 (Mavericks) または Mac OS X 10.10 (Yosemite)&lt;/p&gt;
+
+&lt;h3 id="section-7"&gt;インストール:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;'ClipMenu.app' を /Applications か ~/Applications フォルダにコピーします。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="section-8"&gt;アンインストール:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ClipMenuを終了する。&lt;/li&gt;
+  &lt;li&gt;下記のファイルとフォルダを削除:
+    &lt;ul&gt;
+      &lt;li&gt;~/Library/Preferences/com.clipmenu.ClipMenu.plist&lt;/li&gt;
+      &lt;li&gt;~/Library/Application Support/com.clipmenu.ClipMenu&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ClipMenu.appを削除。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id="section-9"&gt;フィードバック&lt;/h3&gt;
+
+&lt;p&gt;デバッグや改善に役立つお意見、ご感想などは大歓迎です。&lt;/p&gt;
+
+&lt;p&gt;こちらまで、よろしくお願いします:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/ClipMenu/ClipMenu/issues"&gt;GitHub issue&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/clipmenu"&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;この記事へのコメント&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>ClipMenuの模倣アプリについて</title>
     <link rel="alternate" href="http://www.clipmenu.com/ja/blog/2014/10/27/ripped-off-clipmenu-on-mac-app-store/"/>
